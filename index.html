@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
+
+		<style>
+			.col-container {
+				display: flex;
+				gap: 10px;
+			}
+
+			.col {
+				text-align: left;
+				flex: 1;
+			}
+
+			.kinda-smol {
+				font-size: 0.7em;
+			}
+			.smol {
+				font-size: 0.6em;
+			}
+
+			.smoller {
+				font-size: 0.4em;
+			}
+
+			.faded {
+				opacity: 0.5;
+			}
+
+			.fragment.blur {
+				filter: blur(5px);
+				opacity: 1 !important;
+				visibility: visible !important;
+			}
+
+			.fragment.blur.visible {
+				filter: none;
+			}
+
+			.fragment.blur.current-fragment {
+				filter: none;
+			}
+
+			.profile-image {
+				border-radius: 50%;
+				float: right;
+			}
+
+			.left {
+				text-align: left;
+			}
+			.right {
+				text-align: right;
+			}
+			.center{
+				text-align: center;
+			}
+		</style>
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="left">
+					<h3><b>Let's Talk! 📢</b></h3>
+					<h4 style="width: 75%">Communication and Consensus Building in Open-Source</h4>
+					<hr style="width: 75%; margin-left: 0;"/>
+					<div class="col-container" style="width: 50%;">
+						<div class="col">
+							<p class="smol faded"><em>Presented by: </em></p>
+						</div>
+						<div class="col">
+							<p class="smol faded"><strong>Travis Hathaway</strong></p>
+						</div>
+					</div>
+					<div class="col-container" style="width: 50%">
+						<div class="col">
+							<p class="smol faded"><em>For: </em></p>
+						</div>
+						<div class="col">
+							<p class="smol faded"><strong>EuroPython 2025</strong></p>
+						</div>
+					</div>
+				</section>
+				<section class="left">
+					<div class="col-container">
+						<div class="col" style="flex: 2">
+							<h3 class="left">Who am I?</h3>
+							<hr />
+							<ul class="kinda-smol">
+								<li class="fragment">First time EuroPython Presenter! 🚀 🤘 😝</li>
+								<li class="fragment">Long time Python programmer (10+ years) 🐍</li>
+								<li class="fragment">Open-source enthusiast 🧙‍♂️</li>
+								<li class="fragment">Wannabe rock star 🎸 🎶 🎤</li>
+							</ul>
+						</div>
+						<div class="col">
+							<img data-src="./images/travis-hawaii-2024.jpg" alt="Travis Hathaway" class="profile-image"/>
+							<div style="clear: both;"></div>
+							<div class="center">
+								<p class="smol" style="margin-top: 0; margin-bottom: 0;">Travis Hathaway</p>
+								<p class="smoller faded" style="margin-top: 0;">(a.k.a. pretty chill guy)</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="left">
+					<p class="">
+						Today, we will follow the story of <strong>Jack</strong> and how he
+						overcame the challenges of <strong>communication and consensus</strong> 
+						building for his own open-source project
+					</p>
+				</section>
+				<section class="left">
+					<h3>Key Definitions</h3>
+					<hr style="margin-top: 20px; margin-bottom: 20px"/>
+					<div class="col-container">
+						<div class="col">
+							<div class="fragment blur">
+								<dl>
+									<dt style="margin-bottom: 15px;">Communication</dt>
+									<dd class="smol faded">
+										<em>
+											The process of exchanging information, ideas, thoughts, feelings, or messages between individuals or groups using mutually understood symbols, signs, language, or behavior
+										</em>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="col">
+							<div class="fragment blur">
+								<dl>
+									<dt style="margin-bottom: 15px;">Consensus</dt>
+									<dd class="smol faded">
+										<em>
+											A general agreement or shared understanding reached by a group of individuals, often after discussion and negotiation, without necessarily requiring complete unanimity
+										</em>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>	
+				</section>
+				<section class="left">
+					<div class="col-container">
+						<div class="col" style="flex: 2">
+							<h3>Who is Jack?</h3>
+							<hr />
+							<ul class="kinda-smol">
+								<li class="">He's a cat</li>
+								<li class="">Works for a B2B SaaS in the laser pointer industry</li>
+								<li class="">Loves to nap in the sun ☀️</li>
+								<li class="">Has just written an amazing open-source project</li>
+							</ul>
+						</div>
+						<div class="col center">
+							<img data-src="./images/developer-jack.jpeg" alt="Jack" class="profile-image"/>
+								<p class="smol" style="margin-top: 0; margin-bottom: 0;">Jack Catterson</p>
+								<p class="smoller faded" style="margin-top: 0;">(a.k.a. pretty chill cat)</p>
+						</div>
+				</section>
+				<section class="left">
+					<h3>Jack's Open-Source Project</h3>
+					<hr />
+					<ul>
+						<li class="fragment">
+							Jack's B2B SaaS company has recently given Jack permission
+							to open source a tool they have been using internally
+						</li>
+						<li class="fragment">
+							
+						</li>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
