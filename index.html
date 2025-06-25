@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Let's Talk: Communication and Consensus Building in Open-Source</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -64,6 +64,26 @@
 			.center{
 				text-align: center;
 			}
+
+			.circle-image {
+				border-radius: 50%;
+			}
+
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+			.spin-slowly {
+				animation: spin 5s linear infinite;
+				/* Passe die Dauer (5s) für langsamere/schnellere Drehung an */
+				display: inline-block;
+			}
+
 		</style>
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -102,6 +122,7 @@
 								<li class="fragment">Long time Python programmer (10+ years) 🐍</li>
 								<li class="fragment">Open-source enthusiast 🧙‍♂️</li>
 								<li class="fragment">Wannabe rock star 🎸 🎶 🎤</li>
+								<li class="fragment">Aspiring German citizen 🇩🇪...</li>
 							</ul>
 						</div>
 						<div class="col">
@@ -114,42 +135,46 @@
 						</div>
 					</div>
 				</section>
-				<section class="left">
-					<p class="">
-						Today, we will follow the story of <strong>Jack</strong> and how he
-						overcame the challenges of <strong>communication and consensus</strong> 
-						building for his own open-source project
-					</p>
+				<section>
+					<h4>Placeholder for future content</h4>
 				</section>
 				<section class="left">
-					<h3>Key Definitions</h3>
-					<hr style="margin-top: 20px; margin-bottom: 20px"/>
+					<h3>Communication</h3>
+					<hr />
 					<div class="col-container">
-						<div class="col">
-							<div class="fragment blur">
-								<dl>
-									<dt style="margin-bottom: 15px;">Communication</dt>
-									<dd class="smol faded">
-										<em>
-											The process of exchanging information, ideas, thoughts, feelings, or messages between individuals or groups using mutually understood symbols, signs, language, or behavior
-										</em>
-									</dd>
-								</dl>
-							</div>
+						<div class="col fragment " style="flex: 1">
+							<strong>Asynchronous</strong>
+							<ul>
+								<li class="fragment">issue trackers</li>
+								<li class="fragment">forums</li>
+								<li class="fragment">chat servers</li>
+							</ul>
 						</div>
-						<div class="col">
-							<div class="fragment blur">
-								<dl>
-									<dt style="margin-bottom: 15px;">Consensus</dt>
-									<dd class="smol faded">
-										<em>
-											A general agreement or shared understanding reached by a group of individuals, often after discussion and negotiation, without necessarily requiring complete unanimity
-										</em>
-									</dd>
-								</dl>
-							</div>
+						<div class="col fragment " style="flex: 1">
+							<strong>Synchronous</strong>
+							<ul>
+								<li class="fragment">community calls</li>
+								<li class="fragment">in-person meetings</li>
+							</ul>
 						</div>
-					</div>	
+					</div>
+				</section>
+				<section class="left">
+					<h3>Consensus</h3>
+					<hr />
+					<p class="fragment">
+						<strong>Standards</strong>
+					</p>
+					<ul>
+						<li class="fragment">Project enhancement proposals</li>
+						<li class="fragment">Project governance</li>
+					</ul>
+				</section>
+				<section class="left">
+					<p class="">
+						To illustrate how these all fit together, we follow the story of <strong>Jack</strong>
+						and how he utilized these tools to build a community of open-source developers.
+					</p>
 				</section>
 				<section class="left">
 					<div class="col-container">
@@ -157,29 +182,158 @@
 							<h3>Who is Jack?</h3>
 							<hr />
 							<ul class="kinda-smol">
-								<li class="">He's a cat</li>
-								<li class="">Works for a B2B SaaS in the laser pointer industry</li>
-								<li class="">Loves to nap in the sun ☀️</li>
-								<li class="">Has just written an amazing open-source project</li>
+								<li class="fragment" data-fragment-index="1">He's a cat</li>
+								<li class="fragment">Works for a B2B SaaS in the laser pointer industry</li>
+								<li class="fragment">Loves to nap in the sun ☀️</li>
+								<li class="fragment">Has just written an amazing open-source project</li>
 							</ul>
 						</div>
-						<div class="col center">
+						<div class="col center fragment" data-fragment-index="1">
 							<img data-src="./images/developer-jack.jpeg" alt="Jack" class="profile-image"/>
 								<p class="smol" style="margin-top: 0; margin-bottom: 0;">Jack Catterson</p>
 								<p class="smoller faded" style="margin-top: 0;">(a.k.a. pretty chill cat)</p>
+								<p class="faded" style="margin-top: 0; font-size: 0.4em;">
+									Photo by <a href="https://unsplash.com/de/@jaehunpark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jae Park</a> on <a href="https://unsplash.com/de/fotos/braun-getigerte-katze-7GX5aICb5i4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+								</p>
 						</div>
 				</section>
 				<section class="left">
-					<h3>Jack's Open-Source Project</h3>
-					<hr />
-					<ul>
-						<li class="fragment">
-							Jack's B2B SaaS company has recently given Jack permission
-							to open source a tool they have been using internally
-						</li>
-						<li class="fragment">
-							
-						</li>
+					<div class="col-container">
+						<div class="col">
+							<img data-src="./images/argpaws-logo.png" alt="ArgPaws Logo" width="400"/>
+						</div>
+						<div class="col fragment">
+							<h3>Features</h3>
+							<ul class="kinda-smol">
+								<li class="fragment">Framework for writing CLI applications</li>
+								<li class="fragment">Configuration management</li>
+								<li class="fragment">Logging integrations</li>
+								<li class="fragment">Extensible with plugins</li>
+							</ul>
+					</div>
+				</section>
+				<section class="left">
+					<div class="col-container">
+						<div class="col" style="display: flex; align-items: center">
+							<p>
+								Jack's first steps...
+							</p>
+						</div>
+						<div class="col">
+							<div class="fragment col-container" style="display: flex; align-items: center;">
+								<div class="col">
+									<img
+										data-src="./images/github-mark.png"
+										alt="GitHub Logo" width="100"
+										style="background-color: white; border-radius: 25%;"
+									/>
+								</div>
+								<div class="col" style="flex: 2;">
+									<p class="smol">1. Create a GitHub repository</p>
+								</div>
+							</div>
+							<div class="fragment col-container" style="display: flex; align-items: center;">
+								<div class="col">
+									<img
+										data-src="./images/scissors.webp"
+										alt="Cutting a release"
+										width="100"
+										style="background-color: white; border-radius: 25%;"
+									/>
+								</div>
+								<div class="col" style="flex: 2;">
+									<p class="smol">2. Cut a release</p>
+								</div>
+							</div>
+							<div class="fragment col-container" style="display: flex; align-items: center;">
+								<div class="col">
+									<img
+										data-src="./images/pypi-logo.webp"
+										alt="PyPI Logo"
+										width="100"
+										style="background-color: white; border-radius: 25%;"
+									/>
+								</div>
+								<div class="col" style="flex: 2;">
+									<p class="smol">3. Upload to PyPI</p>
+								</div>
+							</div>
+						</div>
+				</section>
+				<section>
+					<p>
+						Jack's B2B SaaS employer writes a blog post about his project
+						and it goes viral! 🚀 More and more users are discovering his
+						project 📈.
+					</p>
+				</section>
+				<section>
+					<div>
+						<img
+							data-src="./images/developer-jack.jpeg"
+							class="circle-image spin-slowly"
+							height="350"
+						/>
+					</div>
+					<p>Jack is excited 😝</p>
+				</section>
+				<section>
+					<p>
+						Jack's employer realizes this project is a great source of
+						publicity, so they decide to let him and few other co-workers
+						work on it full-time.
+					</p>
+				</section>
+				<section>
+					<h3>Jack's first dilemma...</h3>
+				</section>
+				<section>
+					<p>
+						Now that his project is live on <strong>GitHub</strong>, he keeps getting new
+						<strong>issues</strong> and <strong>pull requests</strong> from users. On one 
+						hand, this is great but on the other hand, he feels overwhelmed.
+					</p>
+				</section>
+				<section>
+					<div>
+						<img
+							data-src="./images/developer-jack-serious.png"
+							class="circle-image"
+							height="350"
+						/>
+					</div>
+					<p>Jack is nervous 😬</p>
+				</section>
+				<section>
+					<div class="col-container fragment">
+						<div class="col" style="flex: 1">
+							<img
+								data-src="./images/travis-hawaii-2024.jpg"
+								class="circle-image"
+								height="125"
+							/>
+						</div>
+						<div class="col smol" style="flex: 6">
+							<p style="float: left; width: 300px; background-color: white; padding: 10px; border-radius: 10px;">
+								"Hey Jack! What's up?"
+							</p>
+						</div>
+					</div>
+					<div class="col-container fragment">
+						<div class="col smol" style="flex: 3;">
+							<p style="float: right; width: 450px; background-color: white; padding: 10px; border-radius: 10px">
+								"Hey Travis! I need some help! I know you help manage a popular open-source project,
+								and I need some advice on how to handle all these issues and pull requests."
+							</p>
+						</div>
+						<div class="col" style="flex: 1">
+							<img
+								data-src="./images/developer-jack.jpeg"
+								class="circle-image"
+								height="125"
+							/>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -194,8 +348,6 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
-
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
